@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <h2>Welcome to Flask</h2>
+    <h3>Flask: Rendering Templates</h3>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('index') }}">Index</a>
+{% block content %}
+ <p>This is a basic template rendering example.</p>
+{% endblock %}
+</body>
+</html>
